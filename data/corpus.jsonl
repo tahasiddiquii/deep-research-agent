@@ -1,0 +1,18 @@
+{"id": "quantization", "title": "Quantization", "text": "Quantization reduces the inference cost of large language models by storing weights in lower precision such as int8 or int4. It cuts memory and latency with little accuracy loss."}
+{"id": "distillation", "title": "Knowledge distillation", "text": "Knowledge distillation reduces inference cost by training a smaller student model to imitate a larger teacher. You then deploy the cheaper student at similar quality."}
+{"id": "mixture-of-experts", "title": "Mixture of experts", "text": "Mixture of experts lowers the inference cost of large language models by activating only a few expert subnetworks per token instead of the whole network."}
+{"id": "kv-caching", "title": "KV caching", "text": "Caching key and value attention states between decoding steps reduces the inference cost of language models by avoiding repeated computation."}
+{"id": "chunking", "title": "Chunking", "text": "Chunking splits documents into passages so retrieval augmented generation can fetch focused context. Chunk size strongly affects how reliable the answers are."}
+{"id": "reranking", "title": "Reranking", "text": "Reranking reorders retrieved passages with a cross encoder so the most relevant context reaches the model, making retrieval augmented generation more reliable."}
+{"id": "hybrid-retrieval", "title": "Hybrid retrieval", "text": "Hybrid retrieval combines keyword BM25 and dense vector search. It improves recall and makes retrieval augmented generation more reliable across query types."}
+{"id": "grounding-citations", "title": "Grounding and citations", "text": "Grounding answers in retrieved sources and attaching citations makes retrieval augmented generation more reliable and lets users verify claims."}
+{"id": "benchmarks", "title": "Benchmarks", "text": "Standard benchmarks evaluate a large language model on fixed tasks, giving comparable scores but risking data contamination over time."}
+{"id": "llm-as-judge", "title": "LLM as a judge", "text": "LLM as a judge uses a strong model to evaluate the outputs of another language model, scaling evaluation beyond what human raters can cover."}
+{"id": "human-eval", "title": "Human evaluation", "text": "Human evaluation remains a gold standard to evaluate a language model on helpfulness and safety, though it is slow and costly."}
+{"id": "red-teaming", "title": "Red teaming", "text": "Red teaming evaluates a language model by adversarially probing for unsafe or policy violating responses before deployment."}
+{"id": "lora", "title": "LoRA", "text": "LoRA fine-tunes language models efficiently by training small low rank adapter matrices while freezing the base weights."}
+{"id": "qlora", "title": "QLoRA", "text": "QLoRA fine-tunes language models efficiently by combining four bit quantization with low rank adapters, cutting memory enough to tune on a single GPU."}
+{"id": "peft-adapters", "title": "Adapter tuning", "text": "Parameter efficient fine tuning inserts small adapter layers so you fine-tune language models efficiently without updating all parameters."}
+{"id": "prompt-injection-defense", "title": "Prompt injection defense", "text": "Defending against prompt injection in an LLM application uses input validation, guardrails, least privilege for tools, and output filtering."}
+{"id": "guardrails", "title": "Guardrails", "text": "Guardrails screen the inputs and outputs of an LLM application, blocking prompt injection and unsafe content before it reaches tools or users."}
+{"id": "least-privilege", "title": "Least privilege for tools", "text": "Granting tools least privilege limits the damage a successful prompt injection can do inside an LLM application."}

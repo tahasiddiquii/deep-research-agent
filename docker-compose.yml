@@ -1,0 +1,10 @@
+services:
+  eval:
+    build: .
+    image: deep-research-agent:latest
+    command: ["eval"]
+
+  demo:
+    build: .
+    image: deep-research-agent:latest
+    command: ["demo"]

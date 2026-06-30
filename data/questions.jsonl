@@ -1,0 +1,5 @@
+{"id": "q1", "question": "How can you reduce the inference cost of large language models?", "expected_points": ["quantization", "distillation", "mixture of experts", "caching"]}
+{"id": "q2", "question": "What techniques make retrieval augmented generation more reliable?", "expected_points": ["chunking", "reranking", "hybrid", "citations"]}
+{"id": "q3", "question": "How do you evaluate a large language model?", "expected_points": ["benchmark", "judge", "human evaluation", "red teaming"]}
+{"id": "q4", "question": "What are efficient ways to fine-tune language models?", "expected_points": ["lora", "qlora", "adapter"]}
+{"id": "q5", "question": "How can you defend an LLM application against prompt injection?", "expected_points": ["validation", "guardrails", "least privilege", "output filtering"]}
